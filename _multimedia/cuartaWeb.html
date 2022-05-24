@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="container">
+            <object width="800" height="600">
+                <param name="movie"
+                value="https://www.youtube.com/embed/QfZruW3NI6c"> </param>
+                <param name="allowFullSecreen" value="true"></param>
+
+            </object>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QfZruW3NI6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!-- Con el iFrame da como un elemento de visualización para la API de Youtube. Es más facil con el iFrame y es mucho mejor para la navegabilidad. Con el elemento de Objeto, no ocurre como tal.-->
+
+            <video>  </video><!-- dentro de la etiqueta de video se mete la sub de src (origen) ¡¡¡Importante!! MARCAR BIEN LA RUTA EN DONDE ESTA EL VIDEO EN SU CARPETA.
+            Se le añade la etiqueta de controls / autoplay
+            Segun la edicion de CHROME se puede colocar la subet de autoplay / loop (bucle) / muted / preload (precarga/buffer.Coge los datos, los mete en memoria y con suficientes datos, ya muestra los visualiza.-->
+
+            <!-- Si se coloca varios multiples orígenes se puede generar distintos destinos de origen por si el navegador no pueda cargar el anterior.-->
+
+            <!-- Códecs = audio grabado de una manera, a menos que se meta otro elemento para que se pueda visualizar. 
+            Importante el K-Lite Code Pack para poder ejercutar cualquier elemento.-->
+          
+
+            <hr>
+            <hr>
+
+            <!-- ***Formularios.****
+                1. Primero tienes que comentar a dónde va a el archivo /action = Redirigirlo/ Se suelen enviar a compañias de php que son las que gestionan las Bases de datos-
+                2. Etiqueta method= /POST - encriptación// GET- no se encubre los datos. Es mejor no utilizarlo. Especialmente en anuncios sensibles/-> 
+                3. Se puede ejecutar distintos tipos de elemtnos //label/ INPUT (campo) y el tipo 
+                button: botón + value (valor)= texto
+                checkbox : multisección.
+                radio: única sección.
+                para pre-checkearlo poner la etiqueta de "checked" seleccionado.
+                -->
+            <br>
+            <form action="enviar.php" method="POST">
+                <label> Nombre</label>
+                <input type="button" value="Pulsa aquí">
+                <input type="checkbox" value="chico" id="sexo">Chico.
+                <input type="checkbox" value="chica" id="sexo">Chica.
+                <input type="radio" name="formulario" value="chico" id="sexo2">Chico.
+                <input type="radio" name="formulario" value="chica" id="sexo2">Chica.
+                <!-- tiene que nombrar qué los dos elementos son iguales para que se pueda elegir una cosa u otra-->
+                <input type=file> <!-- Tienes que poner la etiqueta de /accept="image/* [esto hace referencia a todo tipo de imágenes] + .pdf"/-->
+                <input type="text" placeholder="Pincha aquí y olé" minlength="100" name="nombre" id="nombre">
+
+                <!-- minlength= es para limitar los caracteres.
+                En este caso se pone name para JS y id para CSS.Se le puede añadir la etiqueta de value para generar un valor/ elemento sí, en caso tal, no se rellena. Especialmente recomendable para las bases de datos relacionales.-->
+                <input type="password">
+                <input type="range"> 
+                <input type="url">
+                <input type="number">
+                <input type="date">
+                <input type="email">
+                <input type="color">
+
+                <hr>
+                <textarea cols="25" rows="10">
+                </textarea> <!-- Cols: columnas / rows: líneas. Se utiliza para la maquetación. No se suele usar, sino con JS. PLACEHOLDER: es para ponerle el texto dentro de la cuadro-->
+
+                <select name="viajes">
+                    <option>Toledo</option>
+                    <option>Graná</option>
+                </select> 
+                <!-- Selección múltiple se le puede poner destrás de la etiqueta de /select + multiple/
+                Para elegir alguna opción le puedes poner después de /option + selected/-->
+                
+                <select value="no seleccionado"> disabled
+                    <optgroup>
+                        <option>Cádiz</option>
+                        <option>Jerez</option>
+                    </opgroup>
+                    <br>
+                    <optgroup>
+                        <option>Huelva</option>
+                        <option>Cazorla</option>
+                    </optgroup> 
+                </select>
+                <select>
+                    <input list="programas" name="programas">
+                    <datalist id="programas">
+                        <option>CHROME</option>
+                        <option>SAFARI</option>
+                    </datalist>
+                </select>
+                <!-- Se tiene que hacer dependientes el input (celda) a la ID (nombre de la lista)
+                DATALIST es un elemento más efeciente y más utilizado. Es más cómodo para JS-->
+                <hr>
+                <input type="reset">Para borrar.
+                <input type="submit">Para enviar.
+
+                
+               
+                <!-- En algún momento antes de cerrar la etiqueta de form="" tienes que especificar en qué tipo de formato se va a descargar los datos del formulario--> 
+            </form>
+        </video>
+
+            </video>
+        </div>
+    </body>
+</html>

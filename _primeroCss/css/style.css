@@ -1,0 +1,12 @@
+/*
+    1. Estilos Generales
+    2. Navegación
+*/
+
+body{
+    font-size: 40px;
+    color: brown;
+}
+p{
+    color: coral !important;
+}
