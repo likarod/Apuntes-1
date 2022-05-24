@@ -1,0 +1,65 @@
+/* Acabo de generar un comentario con Control + Ç */
+
+/* html{
+    (** ESQUEMA DE background: localización, repetición, posición, disposición (SI es:scroll o fixed)
+} */
+
+html {
+    background: url(img/bg.jpg) ; no-repeat center center fixed 
+    /* (<- background-attachment: para mantener el fondo fijo para que no se haga scroll con el ratón) */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-sizse: cover;
+    background-size: cover;
+}
+
+body{
+    background: rgb(210, 36, 255);
+    background: -moz-linear-gradient(333deg, rgb(210, 36, 255) 37%, rgb(104, 243, 61) 82%);
+    background: -webkit-linear-gradient(333deg, rgb(210, 36, 255) 37%, rgb(104, 243, 61) 82%);
+    background: -o-linear-gradient(333deg, rgb(210, 36, 255) 37%, rgb(104, 243, 61) 82%);
+    background: -ms-linear-gradient(333deg, rgb(210, 36, 255) 37%, rgb(104, 243, 61) 82%);
+    background: linear-gradient(63deg, rgb(210, 36, 255) 37%, rgb(104, 243, 61) 82%);
+    }
+
+.titulo{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.parrafo{
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    
+}
+
+.boton{
+    /* Se puede también poner la opción de cursor: + el comando que se quiera. Esto hace cambiar el cursor, como help y demás. */
+    display: block;
+    width: 150px;
+    color: rgb(39, 255, 24);
+    font-size: 45px;
+    padding: 20px;
+    text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+    -webkit-border-radius: 71.75675675675676px;
+    -moz-border-radius: 71.75675675675676px;
+    border-radius: 71.75675675675676px;
+    background: rgb(210, 210, 148);
+    background: -moz-linear-gradient(90deg, rgb(210, 210, 148) 30%, rgb(250, 20, 20) 70%);
+    background: -webkit-linear-gradient(90deg, rgb(210, 210, 148) 30%, rgb(250, 20, 20) 70%);
+    background: -o-linear-gradient(90deg, rgb(210, 210, 148) 30%, rgb(250, 20, 20) 70%);
+    background: -ms-linear-gradient(90deg, rgb(210, 210, 148) 30%, rgb(250, 20, 20) 70%);
+    background: linear-gradient(0deg, rgb(210, 210, 148) 30%, rgb(250, 20, 20) 70%);
+    -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+a:hover{
+    -moz-transform: rotate(49deg) skew(50deg, 0deg);
+    -webkit-transform: rotate(49deg) skew(50deg, 0deg);
+    -o-transform: rotate(49deg) skew(50deg, 0deg);
+    -ms-transform: rotate(49deg) skew(50deg, 0deg);
+    transform: rotate(49deg) skew(50deg, 0deg);
+    }
+
+a:hover, a:link, a:visited, a:active{text-decoration: none;}

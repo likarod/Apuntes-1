@@ -1,0 +1,10 @@
+#menu{
+    width: 500px;
+    height: 25px;
+    /*border: 1px solid red;*/
+}
+.menuSuperior ul li{display: inline-block;}
+    /* Para eliminar los puntos de las listas en menuSuperior en la <ul> o en <li>
+    list-style-type:none; */
+.menuSuperior ul li a:hover{color:brown}
+    
