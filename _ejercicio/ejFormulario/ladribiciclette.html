@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8" name="formulario2" description="Formulario de incidencias">
+    </header>
+    <body>
+        <div id="container">
+            <form action="police.php" method="POST" name="incidencia" value="robos" autocomplete="on"><strong>Ladri Di Biciclette</strong>
+                <br>
+                <fieldset id="detallesIncidencia" class="robosComunes">
+                    <legend>Detalles de la Incidencia</legend>
+                    <p>
+                         <label>Día:</label><br>
+                         <input type="date">
+                    </p>
+                    <p>
+                        <label>Hora:</label>
+                        <input type="time">
+                    </p>
+                    <p>
+                        <label>Color de la bicicleta:</label>
+                        <input type="color">
+                    </p>
+                    <p>
+                        <label>Tipo de biclicleta:</label>
+                        <select list="tipo" name="tipos" autofocus>
+                         
+                            <optgroup label=Paseo> 
+                                <option value="1">Señorial</option>
+                                <option value="2">Anti-plebeyos</option>
+                                <option value="3">PorEncimaDelHombro</option>
+                                <option value="4">ImposibleParaTuSalario</option>
+                            </optgroup>
+                            <optgroup label="Montaña">
+                                <option>Gamusinos</option>
+                                <option>HueleFlores Premium</option>
+                                <option>Fango Lover</option>
+                                <option>CompiYogui</option>
+                            </optgroup>
+                            <optgroup label="Carreras">
+                                <option>MetroySesentayCinco</option>
+                                <option>3PM.FlourescenteEditionLimited</option>
+                                <option>GrupitourBeerFestival</option>
+                            </optgroup>  
+                        </select>
+                    </p>   
+                    <p>
+                        Accesorios: <br>
+                        <select multiple>
+                                <option>Ruedines</option>
+                                <option>Pegatinas</option>
+                                <option>Cestita cuqui</option>
+                                <option>Bomba de aire</opt<ion>
+                                <option>Timbre</option>
+                                <option>Foco</option>
+                        </select>
+                    </p>
+                    <p>
+                        ¿Qué marca era?
+                        <input list="marca" name="marca" placeholder="Despliega la lista">
+
+                        <datalist id="marca">
+                                <option>Specialized</option>
+                                <option>Trek</option>
+                                <option>Merida</option>
+                                <option>Scott</option>
+                                <option>Giant</option>
+                                <option>Cube</option>
+                                <option>LaPierre</option>
+                                <option>Orbea</option>
+                                <option>Cannodale</option>
+                                <option>Bmc</option>
+                                <option>Canyon</option>
+                                <option>Look</option>
+                                <option>Protek</option>
+                                <option>Megamo</option>
+                                <option>Pinarello</option>
+                                <option>Bianchi</option>
+                                <option>BH</option>
+                                <option>Factor</option>
+                                <option>Ghost</option>
+                                <option>Cervélo</option>
+                                <option>Argon</option>
+                        </datalist>
+                    
+                    </p>
+                   &nbsp;&nbsp;<input type="submit"> 
+
+                </fieldset>            
+            </form>
+        </div>
+    </body>
+</html>

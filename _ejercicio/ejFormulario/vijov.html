@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="formulario" description="Formulario Vijov">        
+    </head>
+    <body>
+        <div id="container">
+            <form action="formulario.php" method="POST" name="nombre" value="nombreClub"><strong>EL CLUB OLD TANK GIRL</strong>
+                <br>
+                <div id="introduccion" class="sección">
+                    El club de la tercera edad de una Asturias posapocaliptica.
+                </div>
+                <br>
+                <fieldset id="personal" class="informacion">
+                    <legend>Sobre tí:</legend>
+                     <p>
+                         <label>Nombre:</label><br>
+                         <input type="text" placeholder="Introduzca su nombre" name="nombre" id="usuario" autofocus>
+                     </p>
+                     <p>
+                         <label>Apellidos:</label><br>
+                        <input type="text" placeholder="Introduzca sus apellidos." name="apellidos" id="apellidosUsuario">
+                    </p>
+                     <p>
+                         <label>Edad</label><br>
+                         <input type="number">
+                        </p>
+                     <p>
+                        <label>Sexo</label><br>
+                        <input type="radio" name="formulario" value="chico" id="sexo">Hombre
+                        <input type="radio" name="formulario" value="chica" id="sexo">Mujer
+                        <input type="radio" name="formulario" value="chiques" id="sexo">Persona no binaria.
+                    </p>
+                    <p>
+                         <label>Me siento Tank</label><br>
+                        <input type="checkbox" name="si" value="afirmacion">Sí, claro.
+                         <input type="checkbox" name="no" value="negacion">No mucho.
+                     </p>
+                     <p>
+                     <label>Escríbenos algo sobre tí:</label><br>
+                     <textarea></textarea>
+                     </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tus circustancias:</legend>
+                    <p>
+                        <lable>Correo electrónico:</lable><br>
+                        <input type="email">
+                    </p>
+                    <p>
+                        <label>Teléfono:</label>
+                        <input type="number">
+                    </p> 
+                    <input type="submit"> 
+                    <input type="reset"> 
+                </fieldset>
+               
+            </form>
+        </div>
+    </body>
+</html>
