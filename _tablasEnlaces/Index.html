@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <title> Tablas y enlaces </title>
+    <!-- Especificación del idioma: <meta charset= "ISO-8859-1">-->
+
+    <!-- Precargas [todo lo que voy a poner antes del "body"] //Marcas el protocolo de actuación antes de la página//. P.E: archivos externos, imágenes, etc-->
+
+    <!--SEO (Posicionamiento)-->
+</head>
+<body>
+    <a> Es un vínculo para darle un destino href al enlace web </a>
+<!-- si quiero que me aparezca en una nueva pestaña target="_blank"-->
+    <nav id="menuSuperior" class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+               <li><a href="#">Servicios</a> 
+                    <ul>
+                        <li><a href="#">Principal</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">Contacto</a></li>
+            <!--Este menú aparece como un elemento de navegación. Si no estuviera la etiqueta de NAV sólo como un texto. Esto con CSS se le especifida de estilo. El objetivo de colocar el # es mientras no tiene un apartado a donde re-dirigir los vínculos.-->
+            <!-- Se puede generar un menú en plan lista con la generación de la etiqueta <li> -->
+        </ul>
+    </nav>
+    <table border="1">
+        <thead>
+            <tr> 
+                
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <!-- Combinación de celdas/Filas-->
+                <td>4</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">aa</td>
+                <!-- Combinación de columnas-->
+                <td>bb</td>
+                <td>cc</td>
+                <td>dd</td>
+
+            </tr>
+            <tr>
+                <td>ff</td>
+                <td>gg</td>
+                
+        </tbody>
+    </table>
+</body>
+</html>

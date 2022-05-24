@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ÚNETE A NUESTRA TRIPULACIÓN</title>
+</head>
+<body>
+    <form action="enviar.php" method="POST" name="registro">
+                    
+        <fieldset id= "ingreso" class="formulario">
+            <p>
+                <label>Nombre:</label><br>
+                <input type="text" placeholder="Introduce tu nombre" id="usuario" autofocus>
+            </p>
+            <p>
+                <label>Dínos con qué te identificas:</label>
+                <input type="radio" name="formulario" value="chico" id="sexo"> Hombre. 
+                <input type="radio" name="formulario" value="chica" id="sexo">Mujer.
+                <input type="radio" name="formulario" value="chiques" id="sexo">Persona no binaria.
+            </p>
+            <!-- NOTA 2: Nunca consigo que con el tabulador se pueda pasar de una opción a otra dentro del checkbox. -->
+            <p>
+                <label>¿Hablas en el lenguaje de la metaficción? </label>
+                <input type="checkbox" name="sí" value="afirmación"> Claro, carajo.
+                <input type="checkbox" name="no" value="negación"> En absoluto.
+                <input type="checkbox" name="indefinición" value="indefinición"> WTF?
+            </p>
+            <a href="#" class="botonFormulario">ENVIAR</a>
+            <href></href>
+        </fieldset>
+    </form>
+</body>
+</html>
