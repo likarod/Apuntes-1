@@ -1,0 +1,245 @@
+
+/* Jugando con CSS3 
+transition: propiedad duración función de temporizador ( opcional ) demora ( opcional );
+*/
+
+#duration {
+  height: 100px;
+  width: 100px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  transition-property: background-color, border-radius;
+  transition-duration: 1s, 5s;
+}
+#duration:hover {
+  background-color: #0000ff;
+  border-radius: 75px;
+}
+
+.ejemplo {
+  width: 125px;
+}
+
+.color {
+  background-color: #caebb7;
+  border: 2px solid #5b973b;
+  transition: background-color 2s ease;
+  -o-transition: background-color 2s ease; /* Para Opera */
+  -ms-transition: background-color 2s ease; /* Para IE */
+  -moz-transition: background-color 2s ease; /* Para Firefox */
+  -webkit-transition: background-color 2s ease; /* Para Chrome y Safari */
+}
+/* EJEMPLO A */
+.color {
+  background-color: #caebb7;
+  border: 2px solid #5b973b;
+  transition: background-color 2s ease;
+  list-style-type: none;
+}
+.color:hover {
+  background-color: #ebb7b7;
+}
+
+/* EJEMPLO B */
+.borde {
+  background-color: #ebb7b7;
+  border: 2px solid #d84e4e;
+  transition: border 2s ease;
+  list-style-type: none;
+}
+.borde:hover {
+  border: 4px dotted #333;
+}
+
+/* EJEMPLO C */
+.ancho {
+  background-color: #bdd6f4;
+  border: 2px solid #4e8cd8;
+  transition: width 2s ease;
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+}
+.ancho:hover {
+  width: 60px;
+}
+
+/* EJEMPLO D */
+.alto {
+  background-color: #f4e4bd;
+  border: 2px solid #ca8f00;
+  transition: height 2s ease;
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+}
+.alto:hover {
+  height: 60px;
+}
+
+/* EJEMPLO E */
+.radio {
+  background-color: #e4bdff;
+  border: 2px solid #7700ca;
+  transition: border-radius 2s ease;
+  list-style-type: none;
+}
+.radio:hover {
+  border-radius: 35px;
+}
+
+/* EJEMPLO F */
+.girar {
+  background-color: #fbffbd;
+  border: 2px solid #b2bd00;
+  color: #b2bd00;
+  transition: transform 2s ease;
+  list-style-type: none;
+}
+.girar:hover {
+  transform: scale(2);
+}
+
+@keyframes escalado {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.a1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  background-color: rgb(209, 70, 70);
+  animation-name: colores;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes girando {
+  0% {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colores {
+  0% {
+    background-color: #eee;
+  }
+  25% {
+    background-color: #999;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+@keyframes moviendo {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    left: 500px;
+    top: 0px;
+  }
+  20% {
+    left: 1000px;
+    top: 0px;
+  }
+  30% {
+    left: 1500px;
+    top: 0px;
+  }
+  40% {
+    left: 2000px;
+    top: 0px;
+  }
+  50% {
+    left: 2500px;
+    top: 0px;
+  }
+  60% {
+    left: 2000px;
+    top: 0px;
+  }
+  70% {
+    left: 1500px;
+    top: 0px;
+  }
+  80% {
+    left: 1000px;
+    top: 0px;
+  }
+  90% {
+    left: 500px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+a3 {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: myanimation3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* animation-iteration-count: 3; */
+}
+h1 {
+  display: block;
+  width: 700px;
+  margin: 100px auto;
+  margin: calc(50vh - 180px) auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 120px;
+  text-align: center;
+  text-shadow: /*relieve*/ 0 1px 0 rgb(200, 200, 200),
+    0 2px 0 rgb(190, 190, 190), 0 3px 0 rgb(180, 180, 180),
+    0 4px 0 rgb(175, 175, 175), 0 5px 0 rgb(180, 180, 180),
+    0 6px 0 rgb(190, 190, 190), /*sombra*/ 5px 7px 5px rgba(0, 0, 0, 0.4),
+    5px 12px 10px rgba(0, 0, 0, 0.3), 5px 17px 20px rgba(0, 0, 0, 0.2),
+    5px 22px 30px rgba(0, 0, 0, 0.1);
+  color: rgba(236, 217, 217, 0.664);
+  /*-webkit-transform: rotateY(20deg) rotateX(30deg);*/
+}

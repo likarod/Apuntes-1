@@ -1,0 +1,85 @@
+/*
+    1. Elementos generales
+    2. Cabecera
+    3. Párrafos
+    4. Pie de página
+*/
+
+/* NOTA DE AUTORA 04/06: Verás muchos colorines en la carta. En general lo realizo para poder probar distintos elementos. Entiendo que podría quedar demasiado sobrecargada. :smile: */
+
+/* NOTA DE AUTORA 06/07: Reconozco que la carta no ha salido del gusto que me gustaba. Quería dotar más de contenido a los <article> como elementos a parte y que aún así tuviera sentido en la forma de la carta. Sin embargo, creo que, en su momento, no pensé mucho para qué los quería. En fin... creo que el resultado es un poco regular*/
+
+/*---------------- 1. Elementos generales ---------------*/
+#container{
+    /*Borde exterior de toda la carta*/
+    border: rgb(24, 24, 24);
+    border-style: solid;
+    /* Color de las letras y fondo de la carta*/
+    color: rgb(1, 54, 56); 
+    background-color: rgba(197, 182, 230, 0.863);
+}    
+
+body{
+    background-image: url(../img/fondocarta.jpg); /* RESUELTO! 06/07- Había generado mal la referencia a la carpeta para la búsqueda de la imágen de fondo.  
+     04/06 ERROR 1: NO comprendo porqué no me aparece la imagen de fondo (?) */
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px ;
+}
+
+/*------------- 2. Cabecera --------------------------*/
+
+.cabecera,.información, .cuerpoFinal{
+    background-color:gainsboro; 
+    text-align: center}
+.nombre{color: black;}
+
+h1{
+    font-size: 56px;
+    font-family:"Times New Roman", Georgia, 'Times New Roman', Times, serif;
+}
+
+#lugarFecha{
+    font-weight: bold;
+    font-size: small;
+    text-align: right;
+}
+
+/*------------------- 3. Párrafos ----------------*/
+
+#estructuraPrincipal, #estructuraSecundaria{
+    /*Tamaño de la fuenta e interlineado de la carta*/
+    font-size: 1em; 
+    line-height: 1,6; /* Error 2: No consigo que la altura de la línea se ejecute para todo lo que es la estructura principal y secundaria de la carta. ¿Tengo que poner mejor la class?.*/
+    /*Guión del texto y márgener en relación al borde de la carta*/
+    text-indent: 30px; 
+    margin-left: 1px;
+    margin-right: 1px;} 
+
+figure{
+    border: 1px solid #85a2ca; 
+    text-align: center;
+    image-orientation: inherit;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+/* 04/05-ERROR 3: No consigo que en el texto aparezca el formato de la lista en círculo como quisiera. He probado cambiar los selectores como de OL/UL y LI. He descubierto que es por el mayerweb que "elimina" a los demás elementos. :sad:
+***
+ol{margin-left: 40px;margin-right: 40px;} 
+li{list-style-type: circle disc; display: block;} */
+
+/* ------- 4. Pie de página -------*/
+
+footer{font-weight: bolder;}
+div footer p#Firma{
+    text-align: right;
+    font-weight: lighter;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+}

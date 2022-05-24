@@ -1,0 +1,98 @@
+/* Es importante poner distintos tipos de archivos CSSpara cada elemento:
+    1. Elementos generales de la página. (formularios, estilos, imágenes, entre otros)
+    2. Animaciones complejas
+    3. Efectos */
+
+ /* A la hora de colocar el link en el HTML siempre se pone:
+    1. El normalize.
+     2. Se puede poner el Boostrap para que pueda generarle una referencia.  
+     3. Después ya se le puede general la carpeta de "style.css"
+     4. Por último se puede colocar todos los elementos/efectos animados. */
+
+/* selectores = nombre que se le aplica  las cosas. */
+
+/* ESTO ES EL ELEMENTO PADRE.
+* {
+    background-color: rgb(97, 146, 48);
+    font-size: 40px;
+    color: lightseagreen;} */
+
+
+/* COLORES EN CSS
+    1. Nombre del color en inglés
+    2. RGB: 0-256 (256 posibilidades)
+    3. RGB + opacidad (0-1)
+    4. HEXADECIMAL: #FFFFFF (0-9)/AF
+*/
+
+p{background-color: rgb(137, 102, 146);} /*selector tipo/etiqueta*/
+p.span{background-color: rgb(102, 50, 50)}; /* Selector descendente = "lo que este contenido de X
+X.Y{.....} 
+selecciona todos los span que hay dentro de p*/
+
+/*  ¡CUIDADO!
+1. Se aplica a todos los elemntos tipo separados por (,): p, a, span {text-decoration-underline;}
+
+2.Otra cosa es que sea: p a span em{text-decoration-underline} <----- El "em" que está dentro de un span dentro de un vínculo y dentro de un párrafo*/
+
+.juanita{color:rgb(202, 120, 13)}
+.importante{color: rgb(214, 226, 43);}
+.megaImportante{color: brown; font-weight: bolder;}
+
+/* COLORES - PREFERIBLE EN LAS CLASS
+   LAS ALTURAS - EN LOS ID */
+
+#pepito{
+    width: 100%;
+    height: 25%;
+}
+
+span.megaImportante{font-size: 135px;} 
+/* Hay que poner el selector especifico. La estructura sería tal cual: "selector_Tipo.SelectorClase{}" */
+
+p .megaImportante{font-size: 260px;} /* Cuando está el espacio entre medio de dos selectores estás expresando que algo está dentro de algo*/
+
+p, .megaImportante{font-size:50px;}
+
+/***** ejemplo para HTML <p class= especial destacado error> </p>*
+
+.error{color:red}
+.destacado{font-size: 15px}
+.especial{ font....}
+3 condiciones marcadas con tres elementos distintos.
+
+********** EJEMPLO:
+    <h1 class="titulos"> MI WEB</h1>
+    <h2 class="titulos modelos">Modelos</h2>
+    <h2 class="subtitutulos modelos">Categorias</h2>
+    <h3 class="subtitutlos modelos estructuras"> Estructuras </h3>
+    
+    [Se llama como se llama son dos clases distintas al estar espaciadas]
+    
+    */
+
+.titulos{font-size: 35px;width: 55%;border: 1px dashed red;font-family: 'Modak', cursive;}
+.modelos{font-weight: bolder; color: orange;}
+.subtitulos{font-size: 55px; font-family: 'Yellowtail', cursive;} 
+.estructuras{font-weight: bolder; color: rosybrown;}
+
+/************ RECUERDA:
+
+1.Todos los elementos de "p" de la página y todos los elemntos con el atributo id=aviso de la pagina.
+
+p, #aviso {font-size: 125px;} 
+
+2.Todo los elementos llamadas id=aviso que estén dentro de cualquier elemento p
+
+p #aviso{...}
+
+3. Todos los "p" que tengan un "id=superior"
+
+p#superior{....} (ESTE ES EL DE LOS MAS ESPECIALES. Con mayor medida de los gestores de contendio) ****/
+
+#todo{
+    background-image: url(../img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
